@@ -14,13 +14,13 @@ function setup() {
 
     //Create the Bodies Here.
     paperBall = new Paper(50, 220);
-    box1 = new Trashcan(600, 650, 200, 20);
+    box1 = new Trashcan(600, 650, 200, 40);
     box2 = new Trashcan(490,620,20,100);
     box3 = new Trashcan(710,620,20,100);
     
     groundSprite=createSprite(width/2, height-35, width,10);
     groundSprite.shapeColor=color(0,0,255);
-    ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
+    ground = Bodies.rectangle(width/2, 650, width, 40 , {isStatic:true} );
      World.add(world, ground);
 }
 function draw() {
